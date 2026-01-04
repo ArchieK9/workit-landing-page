@@ -11,3 +11,15 @@ h1{
   font-size: clamp(u.rem(50), 2.155172413793103rem + 4.137931034482759vw, u.rem(80));
   line-height: 1;
 }
+
+h2{
+  font-size: clamp(u.rem(32), 2.254vw + 1.472rem, u.rem(56));
+}
+
+h3{
+  font-size: clamp(u.rem(28), 0.376vw + 1.662rem, u.rem(32));
+}
+
+p{
+  font-size: clamp(u.rem(16), 0.188vw + 0.956rem, u.rem(18));
+}
