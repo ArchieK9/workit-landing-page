@@ -1,0 +1,13 @@
+@use '../utils/' as u;
+
+h1, h2, h3{
+  font-family: 'Fraunces';
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1{
+  font-size: u.rem(50);
+  font-size: clamp(u.rem(50), 2.155172413793103rem + 4.137931034482759vw, u.rem(80));
+  line-height: 1;
+}

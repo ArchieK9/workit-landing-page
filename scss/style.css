@@ -8,7 +8,38 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Manrope";
+  line-height: 1.8;
+}
+
 img {
   display: block;
   max-width: 100%;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3 {
+  font-family: "Fraunces";
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-size: clamp(3.125rem, 2.1551724138rem + 4.1379310345vw, 5rem);
+  line-height: 1;
 }/*# sourceMappingURL=style.css.map */
