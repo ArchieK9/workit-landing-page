@@ -4,6 +4,18 @@ h1, h2, h3{
   font-family: 'Fraunces';
   font-weight: 600;
   line-height: 1.2;
+
+  span{
+    display: inline-block;
+  }
+
+  span::after{
+    display: block;
+    height: u.rem(2);
+    background-color: var(--green);
+    margin-top: u.rem(4);
+    content: " ";
+  }
 }
 
 h1{
@@ -18,8 +30,4 @@ h2{
 
 h3{
   font-size: clamp(u.rem(28), 0.376vw + 1.662rem, u.rem(32));
-}
-
-p{
-  font-size: clamp(u.rem(16), 0.188vw + 0.956rem, u.rem(18));
 }

@@ -1,0 +1,41 @@
+@use '../utils' as u;
+
+.hero{
+
+  background-color: var(--purple-900);
+  position: relative;
+
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: u.rem(40);
+    position: relative;
+  }
+
+  &__headline{
+    color: var(--white);
+    text-align: center;
+    margin-inline: auto;
+    max-width: 13ch;
+  }
+
+  &__button{
+    margin-bottom: u.rem(24);
+
+    @include u.breakpoint(medium) {
+      margin-bottom: u.rem(0);
+    }
+  
+    @include u.breakpoint(x-large) {
+      margin-bottom: u.rem(48);
+    }
+  }
+
+  &__image{
+    margin-inline: auto;
+    position: absolute;
+    object-fit: contain;
+  }
+}

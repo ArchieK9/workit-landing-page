@@ -13,6 +13,7 @@ html {
 body{
   font-family: 'Manrope';
   line-height: 1.8;
+  font-size: clamp(u.rem(16), 0.188vw + 0.956rem, u.rem(18));
 }
 
 img{
@@ -20,7 +21,12 @@ img{
   max-width: 100%;
 } 
 
+a, a:active{
+  text-decoration: none;
+}
+
 .wrapper {
+  width: 100%;
   max-width: u.rem(1200);
   margin-inline: auto;
   padding-inline: u.rem(20);
