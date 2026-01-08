@@ -5,10 +5,20 @@
   background-color: var(--purple-900);
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4.5rem;
+    background: var(--purple-900);
+    clip-path: ellipse(50% 100% at center 0%);
+  }
+
   &__wrapper{
+    padding-block-end: u.rem(296);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: u.rem(40);
     position: relative;
@@ -21,21 +31,23 @@
     max-width: 13ch;
   }
 
-  &__button{
-    margin-bottom: u.rem(24);
-
-    @include u.breakpoint(medium) {
-      margin-bottom: u.rem(0);
-    }
-  
-    @include u.breakpoint(x-large) {
-      margin-bottom: u.rem(48);
-    }
-  }
-
   &__image{
     margin-inline: auto;
     position: absolute;
+    transform: translateY(90%);
     object-fit: contain;
+    height: u.rem(441);
+    width: u.rem(767);
+    z-index: 1;
+
+    @include u.breakpoint-down(medium){
+      height: u.rem(286.6);
+      width: u.rem(479.91);
+    }
+
+    @include u.breakpoint-down(xsmall){
+      height: u.rem(178.86);
+      width: u.rem(298.32);
+    }
   }
 }
