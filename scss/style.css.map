@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["global/_boilerplate.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["global/_boilerplate.scss","global/_colors.scss"],"names":[],"mappings":"AAAA;EACE;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;AAGF;EACE;;;ACfF;EACE;EACA;EACA;EACA;EACA","file":"style.css"}
