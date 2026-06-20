@@ -22,4 +22,30 @@ img {
   --purple-100: #FCF8FF;
   --white: #FFFFFF;
   --green: #44FFA1;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../../assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", serif;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: clamp(3.125rem, 2.5892857143rem + 2.6785714286vw, 5rem);
 }/*# sourceMappingURL=style.css.map */
