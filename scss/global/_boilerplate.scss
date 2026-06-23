@@ -1,3 +1,5 @@
+@use '../util' as u;
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -8,6 +10,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul{
   margin: 0;
 }
 
+body{
+  font-size: clamp(u.rem(16), 0.9642857142857143rem + 0.17857142857142858vw, u.rem(18));
+}
+
 ul{
   padding: 0;
 }
@@ -16,3 +22,11 @@ img{
   display: block;
 }
 
+.wrapper{
+  margin-inline: auto;
+  width: min(100% - u.rem(32), u.rem(1110));
+}
+
+a, a:visited, a:active{
+  text-decoration: none;
+}

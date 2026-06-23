@@ -1,3 +1,5 @@
+@use '../util/' as u;
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fraunces', serif;
   font-weight: 600;
@@ -19,8 +21,4 @@ h2{
 
 h3{
   font-size: clamp(u.rem(28), 1.6785714285714286rem + 0.35714285714285715vw, u.rem(32));
-}
-
-p{
-  font-size: clamp(u.rem(16), 0.9642857142857143rem + 0.17857142857142858vw, u.rem(18));
 }
